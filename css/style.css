@@ -1,0 +1,126 @@
+/* * general styling */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --main-color: #1e202b;
+    --text-color: white;
+    --primary-color: #009ad8;
+}
+
+
+/* ! navbar */
+.navbar{
+    background-color: rgb(0, 0, 0, .7);
+    
+}
+.navbar a{
+    color:var(--text-color);
+    padding: 5px 30px;
+}
+.navbar-toggler{
+    background-color: var(--text-color);
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: var(--primary-color);
+    border:1px solid var(--primary-color) ;
+    border-radius: 15px;
+    transition: .5s all;
+}
+
+.nav-item a:hover{
+    color: var(--primary-color);
+    border-radius: 15px;
+    border:1px solid var(--primary-color) ;
+   
+}
+
+/* ! landing style */
+.landing{
+    background-image: url(../images/pexels-photo-3783385.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card{
+    background-color: rgb(0, 0, 0, .2);
+    color: white;
+    min-height: 350px;
+}
+
+.landing .form-control{
+    border-radius: 30px;
+    padding: 15px;
+}
+.landing button{
+    position: absolute;
+    right: 20%;
+    top: 25%;
+}
+.landing .btn{
+    border-radius: 20px;
+    padding: 7px  25px;
+    background-color: var(--primary-color);
+}
+
+/* ! footer */
+footer{
+    background-color: rgb(0, 0, 0, .7);
+}
+
+footer .form-control{
+    border-radius: 30px;
+    padding: 15px;
+}
+footer button{
+    position: absolute;
+    right: 37%;
+    bottom: -13%;
+}
+footer .btn{
+    border-radius: 20px;
+    padding: 7px  25px;
+    background-color: var(--primary-color);
+}
+
+.social i{
+    color: var(--primary-color);
+    font-size: 25px;
+    background-color: rgb(0, 0, 0, .2);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s all;
+}
+
+.social i:hover{
+  color: var(--text-color);
+  background-color: var(--primary-color);
+}
+
+
+@media only screen and (max-width: 600px) {
+   
+    .landing button{
+        position: absolute;
+        right: 18%;
+        top: 32%;
+    }
+    .footer{
+       flex-direction: column;
+    }
+
+    footer button{
+        position: absolute;
+        right: 33% ;
+        bottom: -853px;
+        
+    }
+   
+  }
