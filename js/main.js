@@ -12,7 +12,7 @@
 let  card = document.querySelector("#searchBtn");
 let row = document.querySelector("#demo");
 
-let  baseURL = "http://api.weatherapi.com/v1/forecast.json";
+let  baseURL = "https://api.weatherapi.com/v1/forecast.json";
 let   apiKey = "f017b72f49a14793856182626242206";
 
 let  currentLocation = "cairo";
@@ -61,7 +61,7 @@ function  displayData(data){
             <div class="item">
               <h5 class="card-title">${data.location.name}</h5>
               <h2 class="card-text bolder">${day.hour[now.getHours()].temp_c} °C</h2>
-              <img class="w-50 h-50" src="http:${data.current.condition.icon}" alt="condition icon"/>
+              <img class="w-50 h-50" src="https:${data.current.condition.icon}" alt="condition icon"/>
               <p>${data.current.condition.text}</p>
             </div>
             <div class="custom">
