@@ -20,12 +20,13 @@ let  currentLocation = "cairo";
 // ^ functions
 async function  getData(location){
     let  response = await fetch (`${baseURL}?key=${apiKey}&q=${location}&days=3`);
-    if (response.ok === true && response.status === 200){
+     if (response.status !==200) return;
       let  data = await response.json();
+      console.log(response)
       console.log(data)
     
       displayData(data);
-    }
+   
     document.addEventListener('click'  , function(e) {
       console.log(e.target);
     })
